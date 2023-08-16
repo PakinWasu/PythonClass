@@ -22,6 +22,7 @@ def main():
             print('ID:',id)
             print('Dept:',dep)
             
+            
     data_emp.close()
 
 main()
