@@ -3,7 +3,6 @@ def main():
     index_name = 1
     index_id = 2
     index_dep = 3
-
     for indexline,line in enumerate(data_emp,start=1):
         #print(indexline,line)
         line = line.rstrip('\n')
@@ -21,8 +20,7 @@ def main():
             print("Name:",name)
             print('ID:',id)
             print('Dept:',dep)
-            
-            
+           
     data_emp.close()
 
 main()
