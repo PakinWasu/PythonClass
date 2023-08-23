@@ -1,16 +1,16 @@
 def isValidIP(IP):
-    IP = IP.split('.')
-    print(IP)
-    if len(IP)>4 or len(IP)<4:
-        print(len(IP))
-        return 'false'
-    for i in IP:
-        ip = int(i)
-        if ip > 255 or ip < 0:
-            return 'false'
-    return 'true'
-
-
+  IP = IP.split('.')
+  #print(IP)
+  if len(IP)>4 or len(IP)<4:
+    #print(len(IP))
+    return 'false'
+  for i in IP:
+    if i.startswith("0") and i.endswith("0") == False:
+      return 'false'
+    ip = int(i)
+    if ip > 255 or ip < 0:
+      return 'false'
+  return 'true'
 
 print(isValidIP('1.2.3.4'))
 print(isValidIP('1.2.3'))
