@@ -8,12 +8,11 @@ def highestDigit(num):
         #print(number)
         if numhigh < number :
             numhigh = number
-
-    
     return numhigh
-
-
 print(highestDigit(379))
+
+
 print(highestDigit(2))
+
 print(highestDigit(377401))
 

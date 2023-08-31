@@ -9,9 +9,8 @@ def capToFront(text):
         #print(t)
         if t.islower() == True:
             tt = tt+t
-    
     return(tt)
-
 print(capToFront('hApPy'))
+
 print(capToFront('moveMENT'))
 print(capToFront('shOrtCAKE'))

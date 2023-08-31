@@ -7,7 +7,7 @@ def totalVolume(*setnum):
             numm = numm*num
         number = number + numm
     return number
+print(totalVolume([2,2,2],[2,1,1])) #2*2*2 + 2*1*1 =10
+print(totalVolume([4,2,4],[3,3,3],[1,1,2],[2,1,1])) 
 
-print(totalVolume([4,2,4],[3,3,3],[1,1,2],[2,1,1]))
-print(totalVolume([2,2,2],[2,1,1]))
 print(totalVolume([1,1,1]))

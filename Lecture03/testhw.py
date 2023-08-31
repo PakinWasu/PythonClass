@@ -58,8 +58,8 @@ def muti_table_up (muti_min,muti_max,column,row):
     if ((muti_max-muti_min)+1)%column != 0 :
         print(muti_table(muti_min,rr,row))
     return ""
+print(muti_table_up(27,39,4,13))
 
 #print(muti_table(27,4,12))
 
-#print(muti_table_up(27,39,4,13))
 

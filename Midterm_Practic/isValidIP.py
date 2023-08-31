@@ -11,8 +11,8 @@ def isValidIP(IP):
     if ip > 255 or ip < 0:
       return 'false'
   return 'true'
-
 print(isValidIP('1.2.3.4'))
+
 print(isValidIP('1.2.3'))
 print(isValidIP('1.2.3.4.5'))
 print(isValidIP('123.45.65.89'))

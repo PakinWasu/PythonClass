@@ -5,12 +5,12 @@ def digitalClock(sec):
     if h//24 >=1:
       h = h%24
     formatted_time = "{:02d}:{:02d}:{:02d}".format(h, m, s)
-    return print(formatted_time)
+    return formatted_time
 
-    
+print(digitalClock(5025))    
 
 
-print(digitalClock(5025))
+
 print(digitalClock(61201))
 
 

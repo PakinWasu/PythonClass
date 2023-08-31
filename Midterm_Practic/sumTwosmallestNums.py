@@ -9,9 +9,8 @@ def sumTwosmallestNums(num):
             r = r+1
             if r == 2:
                 return(number)
-
-
 print(sumTwosmallestNums([19,5,42,2,77]))
+
 print(sumTwosmallestNums([10,343445353,3453445,3453545353453]))
 print(sumTwosmallestNums([2,9,6,-1]))
 print(sumTwosmallestNums([879,953,694,-847,342,221,-91,-723,791,-587]))
