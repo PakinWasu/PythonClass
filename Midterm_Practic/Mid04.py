@@ -14,3 +14,4 @@ def sore_text(*text):
    
 
 print(sore_text('Hello','pYthon','5Pythonm','world','445'))
+print(sore_text('Hello','pYthon','5Pythonm','world','445'))
