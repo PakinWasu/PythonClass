@@ -1,5 +1,3 @@
-heroes = ['Ironman', 'Thor','Hulk','Spiderman']
-pro = True
 def main():
     while True:
         print('''Please select option -
@@ -21,6 +19,7 @@ def main():
         elif select_options == 5:
             sorte_name()
         else:
+            filewrite()
             return 0
         print()
 def display():
@@ -52,5 +51,25 @@ def sorte_name():
     elif slc == 2:
         heroes.sort()
         heroes.reverse()
+def filewrite():
+    outfile = open('heroes.txt','w')
+    for name_heroes in heroes:
+        outfile.write(name_heroes+'\n')
+    outfile.close
+def fileread():
+    infile = open('heroes.txt','r')
+    name_heroes = infile.read()
+    infile.close()
+    name_heroes = name_heroes.split('\n')
+    name_heroes.pop()
+    print(name_heroes)
+    return  (name_heroes)
+
+
+try:
+    heroes = fileread()
+except FileNotFoundError:
+    print('Not file Heroes.txt \n')
+    heroes = ['Ironman', 'Thor','Hulk','Spiderman',"Antman"]
 
 main()
