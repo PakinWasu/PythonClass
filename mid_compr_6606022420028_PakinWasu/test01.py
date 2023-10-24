@@ -8,5 +8,5 @@ for r in range(row):
         print(n,end="\t")
         n = n+1
         if n > 100:
-            print('')
+            break
     print('')
