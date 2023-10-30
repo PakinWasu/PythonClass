@@ -1,6 +1,5 @@
 def add_num(*num):
     sum = 0
-    
     fornt = []
     for i in num:
         #print(i)
@@ -9,16 +8,10 @@ def add_num(*num):
             #print(k)
             fornt.append(k)
             k = int(k)
-            
             sum+=k
     #print(fornt)
-
     out = ' + '.join(fornt)+' = '+str(sum)
     return out
-    
-
-        
-
 
 
 print(add_num(12,13)) #output: 1 + 2 + 1 + 3 = 7
