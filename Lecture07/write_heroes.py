@@ -51,6 +51,7 @@ def sorte_name():
     elif slc == 2:
         heroes.sort()
         heroes.reverse()
+        
 def filewrite():
     outfile = open('heroes.txt','w')
     for name_heroes in heroes:
